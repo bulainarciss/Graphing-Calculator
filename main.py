@@ -33,7 +33,7 @@ def graph():
     if 'x' in str(string):
         v1 = float(eval(bytes([ord(i) for i in r1.get()])))
         v2 = float(eval(bytes([ord(i) for i in r2.get()])))
-        x1 = np.arange(v1, v2, 0.0001)
+        x1 = np.arange(v1, v2, 0.001)
         if "tan" in str(string) and "arctan" not in str(string):
             y1 = [0]*len(x1)
             for el in range(len(x1)):
